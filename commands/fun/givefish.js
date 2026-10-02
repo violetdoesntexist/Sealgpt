@@ -1,10 +1,10 @@
 const { SlashCommandBuilder } = require('discord.js');
 const randomResponses = [
-    "OMNOMNOM :3, BWAAAAA <3 *hugs you*",
+    "OMNOMNOM :3, BWAAAAA <3",
     "yummy! thx human :3",
     "mmmmm yyummy feesh.. :P",
     "fishy fish yummy nom",
-    "*eats* i love you thanks"
+    " i love you thanks"
 ];
 const randomMsg = randomResponses[Math.floor(Math.random() * randomResponses.length)];
 
