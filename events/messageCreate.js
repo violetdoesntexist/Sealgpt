@@ -10,7 +10,16 @@ const randomResponses = [
     "oughh ough ough",
     "GUHH!!",
     "guh",
-    "bleh :3"
+    "bleh :3",
+    "want feesh...",
+    "fishy pls",
+    "hey its me its seality"
+    "wawawawawa",
+    "wawa",
+    "WA!",
+    "guhhhhhhhhhhh",
+    "honk",
+    "sealie need nom"
 ];
 
 module.exports = {
