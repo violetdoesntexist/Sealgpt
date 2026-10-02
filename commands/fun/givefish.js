@@ -10,7 +10,9 @@ const randomMsg = randomResponses[Math.floor(Math.random() * randomResponses.len
 
 module.exports = {
 	data: new SlashCommandBuilder().setName('givefish').setDescription('gives fish to seal'),
-	async execute(interaction) {
-		await interaction.reply(randomMsg);
-	},
+    async execute(interaction) {
+    const randomFishMsg = randomResponses[Math.floor(Math.random() * randomResponses.length)];
+    await interaction.reply(randomFishMsg);
+},
 };
+
