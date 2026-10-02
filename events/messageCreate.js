@@ -43,7 +43,13 @@ module.exports = {
         if (data.count >= data.target) {
             const randomMsg = randomResponses[Math.floor(Math.random() * randomResponses.length)];
             
-            await message.channel.send(randomMsg);
+            try {
+                await message.channel.send(randomMsg);
+            } catch (error) {
+                if (error.code !== 50013) {
+                    console.error(error);
+                }
+            }
 
             data.count = 0;
             data.target = getRandomInterval(10, 15);
