@@ -19,7 +19,9 @@ const randomResponses = [
     "WA!",
     "guhhhhhhhhhhh",
     "honk",
-    "sealie need nom"
+    "sealie need nom",
+    "FEEESH!!",
+    "blap"
 ];
 
 module.exports = {
@@ -31,7 +33,7 @@ module.exports = {
         if (!channelCounters.has(channelId)) {
             channelCounters.set(channelId, {
                 count: 0,
-                target: getRandomInterval(10, 15)
+                target: getRandomInterval(5, 15)
             });
         }
 
