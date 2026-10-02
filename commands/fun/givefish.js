@@ -8,9 +8,9 @@ const randomResponses = [
 ];
 
 module.exports = {
-    const randomMsg = randomResponses[Math.floor(Math.random() * randomResponses.length)];
+    const randomFishMsg = randomResponses[Math.floor(Math.random() * randomResponses.length)];
 	data: new SlashCommandBuilder().setName('givefish').setDescription('gives fish to seal'),
 	async execute(interaction) {
-		await interaction.reply(randomMsg);
+		await interaction.reply(randomFishMsg);
 	},
 };
