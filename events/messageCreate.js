@@ -1,9 +1,5 @@
 const { Events } = require('discord.js');
-
-// Map to track message counters and target triggers per channel
 const channelCounters = new Map();
-
-// Helper to pick a random integer between min and max (inclusive)
 function getRandomInterval(min = 10, max = 15) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
