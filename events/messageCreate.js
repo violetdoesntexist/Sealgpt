@@ -13,7 +13,7 @@ const randomResponses = [
     "bleh :3",
     "want feesh...",
     "fishy pls",
-    "hey its me its seality"
+    "hey its me its seality",
     "wawawawawa",
     "wawa",
     "WA!",
