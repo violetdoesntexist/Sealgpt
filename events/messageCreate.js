@@ -1,6 +1,6 @@
 const { Events } = require('discord.js');
 const channelCounters = new Map();
-function getRandomInterval(min = 10, max = 15) {
+function getRandomInterval(min = 10, max = 20) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -21,7 +21,10 @@ const randomResponses = [
     "honk",
     "sealie need nom",
     "FEEESH!!",
-    "blap"
+    "blap",
+    "blap blap blap",
+    "ough ough amelia made me btw.. you should like..  really appreciate her... https://violetdoesntexist.me/",
+    "woof"
 ];
 
 module.exports = {
@@ -33,7 +36,7 @@ module.exports = {
         if (!channelCounters.has(channelId)) {
             channelCounters.set(channelId, {
                 count: 0,
-                target: getRandomInterval(5, 15)
+                target: getRandomInterval(10, 20)
             });
         }
 
@@ -52,7 +55,7 @@ module.exports = {
             }
 
             data.count = 0;
-            data.target = getRandomInterval(10, 15);
+            data.target = getRandomInterval(10, 20);
         }
     },
 };

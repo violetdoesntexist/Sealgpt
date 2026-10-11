@@ -4,7 +4,9 @@ const randomResponses = [
     "yummy! thx human :3",
     "mmmmm yyummy feesh.. :P",
     "fishy fish yummy nom",
-    " i love you thanks"
+    " i love you thanks",
+    "FEEEEESH :D",
+    "yayyyyy :3"
 ];
 const randomMsg = randomResponses[Math.floor(Math.random() * randomResponses.length)];
 
