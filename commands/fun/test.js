@@ -25,6 +25,6 @@ module.exports = {
     async execute(interaction) {
     const randomSealGif = randomResponses[Math.floor(Math.random() * randomResponses.length)];
     await interaction.reply(randomSealGif);
-    await interaction.reply("meeeeeeeeeeew");
+    await interaction.followUp("meeeeeeeeeeew");
 },
 };
