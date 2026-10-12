@@ -21,7 +21,7 @@ const randomResponses = [
 const randomMsg = randomResponses[Math.floor(Math.random() * randomResponses.length)];
 
 module.exports = {
-	data: new SlashCommandBuilder().setName('gif').setDescription('random seal gif :3'),
+	data: new SlashCommandBuilder().setName('test').setDescription('random seal gif :3'),
     async execute(interaction) {
     const randomSealGif = randomResponses[Math.floor(Math.random() * randomResponses.length)];
     await interaction.reply(randomSealGif);
