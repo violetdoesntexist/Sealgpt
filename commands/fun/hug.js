@@ -30,7 +30,8 @@ module.exports = {
     async execute(interaction) {
     const randomSealGif = randomResponses[Math.floor(Math.random() * randomResponses.length)];
     const randomLine = randomLines[Math.floor(Math.random() * randomLines.length)];
-    const embed = new EmbedBuilder().setImage(randomSealGif).setTitle(randomLines)
+    const embed = new EmbedBuilder().setImage(randomSealGif).setTitle(randomLine;
+    await interaction.reply(embed)
 },
 };
 
