@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const randomResponses = [
     "https://klipy.com/gifs/seal-sealtwt-2",
     "https://klipy.com/gifs/seal-baikal-seal-3",
@@ -30,10 +30,10 @@ module.exports = {
     async execute(interaction) {
     const randomSealGif = randomResponses[Math.floor(Math.random() * randomResponses.length)];
     const randomLine = randomLines[Math.floor(Math.random() * randomLines.length)];
-    await interaction.reply(randomSealGif);
-    await interaction.followUp(randomLine);
+    const embed = new EmbedBuilder().setImage(randomSealGif).setTitle(randomLines)
 },
 };
+
 
 
 
