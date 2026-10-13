@@ -1,7 +1,6 @@
 const { SlashCommandBuilder } = require('discord.js');
 const randomResponses = [
     "https://klipy.com/gifs/seal-sealtwt-2",
-    "https://klipy.com/gifs/seal-fish-2",
     "https://klipy.com/gifs/seal-baikal-seal-3",
     "https://klipy.com/gifs/seal-hug-7",
     "https://klipy.com/gifs/seal-hugging",
