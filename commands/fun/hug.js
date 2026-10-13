@@ -32,7 +32,7 @@ module.exports = {
     const randomLine = randomLines[Math.floor(Math.random() * randomLines.length)];
     let index = randomResponses.indexOf(randomSealGif);
     let indexline = randomLines.indexOf(randomLine);
-    const embed = new EmbedBuilder().setImage(randomSealGif).setTitle(randomLine).setColor('LuminousVividPink').setFooter(`gif number ${index} line number ${indexline}`);
+    const embed = new EmbedBuilder().setImage(randomSealGif).setTitle(randomLine).setColor('LuminousVividPink').setFooter({ text: `gif number ${index} line number ${indexline}` });
     await interaction.reply({ embeds: [embed] })
 },
 };
