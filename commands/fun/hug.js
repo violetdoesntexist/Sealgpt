@@ -1,15 +1,15 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const randomResponses = [
-    "https://klipy.com/gifs/seal-sealtwt-2",
-    "https://klipy.com/gifs/seal-baikal-seal-3",
-    "https://klipy.com/gifs/seal-hug-7",
-    "https://klipy.com/gifs/seal-hugging",
-    "https://klipy.com/gifs/mistwol-seal-2",
-    "https://klipy.com/gifs/seal-kiss-2BY",
-    "https://klipy.com/gifs/seal-seal-plush",
-    "https://klipy.com/gifs/seal-kiss-kiss-seal",
-    "https://klipy.com/gifs/seal-88",
-    "https://klipy.com/gifs/seal-sticking-tongue"
+    "https://cdn.hackclub.com/01a13679-00ff-7809-bc81-7db51dd33105/YXdnWsEz39PKxoB.gif",
+    "https://cdn.hackclub.com/01a13678-fe37-7eca-b680-dbdfde49ab79/rLoYn9CT.gif",
+    "https://cdn.hackclub.com/01a13678-fccd-7994-902a-038919573e68/quEhHY2FhyOIKY.mp4",
+    "https://cdn.hackclub.com/01a13678-facb-7b7e-9387-d9b5334bea31/NaOZXOgbB5dI5PnrZ2e.gif",
+    "https://cdn.hackclub.com/01a13678-f9b4-7586-b359-5f77d53a0251/JKLvLO2sGpJp.gif",
+    "https://cdn.hackclub.com/01a13678-f7b6-7a4e-84bf-5ffe1514535d/ieEdWGR6nf5it.gif",
+    "https://cdn.hackclub.com/01a13678-f585-76b1-970f-06a312519269/bi3DTGxx.gif",
+    "https://cdn.hackclub.com/01a13678-f459-716a-8b81-c6ec0a912e2f/AmPlb7J0GXWiHG.gif",
+    "https://cdn.hackclub.com/01a13678-f253-7978-85dc-df1c86086143/2fNNZa2l.gif",
+    "https://cdn.hackclub.com/01a13678-a77f-75e8-be45-d789f0eeb375/YXdnWsEz39PKxoB.gif"
 
 ];
 
