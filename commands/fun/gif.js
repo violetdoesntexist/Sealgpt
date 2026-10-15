@@ -23,7 +23,7 @@ const randomMsg = randomGifList[Math.floor(Math.random() * randomGifList.length)
 module.exports = {
 	data: new SlashCommandBuilder().setName('gif').setDescription('random seal gif :3'),
     async execute(interaction) {
-    const randomSealGif = randomResponses[Math.floor(Math.random() * randomGifList.length)];
+    const randomSealGif = randomGifList[Math.floor(Math.random() * randomGifList.length)];
     index = randomGifList.indexOf(randomSealGif) + 1 ;
     const embed = new EmbedBuilder().setImage(randomSealGif).setTitle("Heres your seal gif!:").setColor("Purple").setFooter({ text: `Gif number: ${index}` });
     await interaction.reply(randomSealGif);
