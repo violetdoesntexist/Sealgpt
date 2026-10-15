@@ -18,7 +18,7 @@ const randomGifList = [
     "https://klipy.com/gifs/weddell-seal-seal-yelling",
     "https://klipy.com/gifs/megaweaner-weddell"
 ];
-const randomMsg = randomResponses[Math.floor(Math.random() * randomGifList.length)];
+const randomMsg = randomGifList[Math.floor(Math.random() * randomGifList.length)];
 
 module.exports = {
 	data: new SlashCommandBuilder().setName('gif').setDescription('random seal gif :3'),
