@@ -13,7 +13,8 @@ const randomResponses = [
     "bleh :3",
     "want feesh...",
     "fishy pls",
-    "hey its me its seality",
+    "hi im a seal btw",
+    "slappy halloween",
     "wawawawawa",
     "wawa",
     "WA!",
@@ -23,8 +24,9 @@ const randomResponses = [
     "FEEESH!!",
     "blap",
     "blap blap blap",
-    "ough ough amelia made me btw.. you should like..  really appreciate her... https://violetdoesntexist.me/",
+    "honky christmas and a slappy new year! :3",
     "woof"
+
 ];
 
 module.exports = {
