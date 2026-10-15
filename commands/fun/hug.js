@@ -34,6 +34,7 @@ module.exports = {
     let indexline = randomLines.indexOf(randomLine) +1 ;
     const embed = new EmbedBuilder().setImage(randomSealGif).setTitle(randomLine).setColor('LuminousVividPink').setFooter({ text: `Gif number: ${index} Line number: ${indexline}` });
     await interaction.reply({ embeds: [embed] })
+    console.log("hug triggered")
 },
 };
 

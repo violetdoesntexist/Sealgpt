@@ -15,6 +15,7 @@ module.exports = {
     async execute(interaction) {
     const randomFishMsg = randomResponses[Math.floor(Math.random() * randomResponses.length)];
     await interaction.reply(randomFishMsg);
+    console.log("givefish triggered")
 },
 };
 
