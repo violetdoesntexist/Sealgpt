@@ -1,5 +1,5 @@
-const { SlashCommandBuilder } = require('discord.js');
-const randomResponses = [
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+const randomGifList = [
     "https://klipy.com/gifs/seal-clap-4",
     "https://tenor.com/view/seal-seal-dance-kad-kadinhou-sfc-gif-27260805",
     "https://klipy.com/gifs/seal-sealtwt-4",
@@ -18,12 +18,14 @@ const randomResponses = [
     "https://klipy.com/gifs/weddell-seal-seal-yelling",
     "https://klipy.com/gifs/megaweaner-weddell"
 ];
-const randomMsg = randomResponses[Math.floor(Math.random() * randomResponses.length)];
+const randomMsg = randomResponses[Math.floor(Math.random() * randomGifList.length)];
 
 module.exports = {
 	data: new SlashCommandBuilder().setName('gif').setDescription('random seal gif :3'),
     async execute(interaction) {
-    const randomSealGif = randomResponses[Math.floor(Math.random() * randomResponses.length)];
+    const randomSealGif = randomResponses[Math.floor(Math.random() * randomGifList.length)];
+    index = randomGifList.indexOf(randomSealGif) + 1 ;
+    const embed = new EmbedBuilder().setImage(randomSealGif).setTitle("Heres your seal gif!:").setColor("Purple").setFooter({ text: `Gif number: ${index}` });
     await interaction.reply(randomSealGif);
 },
 };
