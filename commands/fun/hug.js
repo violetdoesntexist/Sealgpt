@@ -30,8 +30,8 @@ module.exports = {
     async execute(interaction) {
     const randomSealGif = randomResponses[Math.floor(Math.random() * randomResponses.length)];
     const randomLine = randomLines[Math.floor(Math.random() * randomLines.length)];
-    let index = randomResponses.indexOf(randomSealGif + 1);
-    let indexline = randomLines.indexOf(randomLine + 1);
+    let index = randomResponses.indexOf(randomSealGif) +1 ;
+    let indexline = randomLines.indexOf(randomLine) +1 ;
     const embed = new EmbedBuilder().setImage(randomSealGif).setTitle(randomLine).setColor('LuminousVividPink').setFooter({ text: `Gif number: ${index} Line number: ${indexline}` });
     await interaction.reply({ embeds: [embed] })
 },
