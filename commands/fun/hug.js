@@ -2,7 +2,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const randomResponses = [
     "https://cdn.hackclub.com/01a13679-00ff-7809-bc81-7db51dd33105/YXdnWsEz39PKxoB.gif",
     "https://cdn.hackclub.com/01a13678-fe37-7eca-b680-dbdfde49ab79/rLoYn9CT.gif",
-    //"https://cdn.hackclub.com/01a13678-fccd-7994-902a-038919573e68/quEhHY2FhyOIKY.mp4",
+    "https://cdn.hackclub.com/01a1410b-a581-7371-a406-2eb5fb0f375d/ezgif-5e602a5af828e673.gif",
     "https://cdn.hackclub.com/01a13678-facb-7b7e-9387-d9b5334bea31/NaOZXOgbB5dI5PnrZ2e.gif",
     "https://cdn.hackclub.com/01a13678-f9b4-7586-b359-5f77d53a0251/JKLvLO2sGpJp.gif",
     "https://cdn.hackclub.com/01a13678-f7b6-7a4e-84bf-5ffe1514535d/ieEdWGR6nf5it.gif",
