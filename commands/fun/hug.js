@@ -2,7 +2,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const randomResponses = [
     "https://cdn.hackclub.com/01a13679-00ff-7809-bc81-7db51dd33105/YXdnWsEz39PKxoB.gif",
     "https://cdn.hackclub.com/01a13678-fe37-7eca-b680-dbdfde49ab79/rLoYn9CT.gif",
-    "https://cdn.hackclub.com/01a13678-fccd-7994-902a-038919573e68/quEhHY2FhyOIKY.mp4",
+    //"https://cdn.hackclub.com/01a13678-fccd-7994-902a-038919573e68/quEhHY2FhyOIKY.mp4",
     "https://cdn.hackclub.com/01a13678-facb-7b7e-9387-d9b5334bea31/NaOZXOgbB5dI5PnrZ2e.gif",
     "https://cdn.hackclub.com/01a13678-f9b4-7586-b359-5f77d53a0251/JKLvLO2sGpJp.gif",
     "https://cdn.hackclub.com/01a13678-f7b6-7a4e-84bf-5ffe1514535d/ieEdWGR6nf5it.gif",
@@ -30,9 +30,9 @@ module.exports = {
     async execute(interaction) {
     const randomSealGif = randomResponses[Math.floor(Math.random() * randomResponses.length)];
     const randomLine = randomLines[Math.floor(Math.random() * randomLines.length)];
-    let index = randomResponses.indexOf(randomSealGif);
-    let indexline = randomLines.indexOf(randomLine);
-    const embed = new EmbedBuilder().setImage(randomSealGif).setTitle(randomLine).setColor('LuminousVividPink').setFooter({ text: `gif number ${index} line number ${indexline}` });
+    let index = randomResponses.indexOf(randomSealGif + 1);
+    let indexline = randomLines.indexOf(randomLine + 1);
+    const embed = new EmbedBuilder().setImage(randomSealGif).setTitle(randomLine).setColor('LuminousVividPink').setFooter({ text: `Gif number: ${index} Line number: ${indexline}` });
     await interaction.reply({ embeds: [embed] })
 },
 };
