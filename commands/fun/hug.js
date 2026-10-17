@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
-const randomResponses = [
+const randomHugGifs = [
     "https://cdn.hackclub.com/01a13679-00ff-7809-bc81-7db51dd33105/YXdnWsEz39PKxoB.gif",
     "https://cdn.hackclub.com/01a13678-fe37-7eca-b680-dbdfde49ab79/rLoYn9CT.gif",
     "https://cdn.hackclub.com/01a1410b-a581-7371-a406-2eb5fb0f375d/ezgif-5e602a5af828e673.gif",
@@ -28,11 +28,11 @@ const randomLines = [
 module.exports = {
 	data: new SlashCommandBuilder().setName('hug').setDescription('Seal Hug :3'),
     async execute(interaction) {
-    const randomSealGif = randomResponses[Math.floor(Math.random() * randomResponses.length)];
+    const randomHugGif = randomHugGifs[Math.floor(Math.random() * randomHugGifs.length)];
     const randomLine = randomLines[Math.floor(Math.random() * randomLines.length)];
-    let index = randomResponses.indexOf(randomSealGif) +1 ;
+    let index = randomHugGifs.indexOf(randomHugGif) +1 ;
     let indexline = randomLines.indexOf(randomLine) +1 ;
-    const embed = new EmbedBuilder().setImage(randomSealGif).setTitle(randomLine).setColor('LuminousVividPink').setFooter({ text: `Gif number: ${index} Line number: ${indexline}` });
+    const embed = new EmbedBuilder().setImage(randomHugGif).setTitle(randomLine).setColor('LuminousVividPink').setFooter({ text: `Gif number: ${index} Line number: ${indexline}` });
     await interaction.reply({ embeds: [embed] })
     console.log("hug triggered")
 },
