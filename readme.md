@@ -7,6 +7,19 @@ It's a seal! But it's in your computer... a seal-themed Discord bot!
 
 A Discord bot that's themed around seals. I made this for a friend's server because I like seals and wanted to try building a Discord bot.
 
+## Commands
+
+Interaction:
+  /hug - hug the seal
+  /givefish - give the seal some yummy fish
+Fun:
+  /gif - get a random seal gif
+Utility
+  /ping - ping the bot
+  /info - get the project infos
+
+MORE IN FUTURE VERSIONS 
+
 ## Getting Started (with npm)
 
 ```bash
@@ -38,7 +51,8 @@ Amelia Violet Rufe Viguiye
 
 * 1.0 - First version, random messages
 * 2.0 - Added interaction commands
-* 3.0 - Updated, added new interactions, and polished
+* 3.0 - Updated, added new interactions, and more polished
+* 3.5 - Even more polished, all commands now embed and gifs hosted on cdn
 
 ## License
 
