@@ -21,7 +21,7 @@ module.exports = {
 
         const now = Date.now();
         const timestamps = cooldowns.get(command.data.name);
-        const defaultCooldownDuration = 30;
+        const defaultCooldownDuration = 5;
         const cooldownAmount = (command.cooldown ?? defaultCooldownDuration) * 1_000;
 
         if (timestamps.has(interaction.user.id)) {
