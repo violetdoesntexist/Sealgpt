@@ -71,7 +71,7 @@ const randomSpeciesFacts = [
 
 
 module.exports = {
-    data: new SlashCommandBuilder().setName('randomSpecies').setDescription('gives a fun fact and image of a random seal species.'),
+    data: new SlashCommandBuilder().setName('random-species').setDescription('gives a fun fact and image of a random seal species.'),
     async execute(interaction) {
     const randomSpeciesImage = randomSpeciesImages[Math.floor(Math.random() * randomSpeciesImages.length)];
     let indexSpecies = randomSpeciesImages.indexOf(randomSpeciesImage);
