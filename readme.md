@@ -28,7 +28,13 @@ MORE IN FUTURE VERSIONS
 git clone https://github.com/violetdoesntexist/Sealgpt.git
 cd Sealgpt
 npm install
+node index.js
+```
 
+How to refresh commands (needed on first use and every time commands need to be updated)
+
+```bash
+node deploy-commands.js
 ```
 
 Add tokens to `config.json`:
