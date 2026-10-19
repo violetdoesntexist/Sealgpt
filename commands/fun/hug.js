@@ -32,7 +32,10 @@ module.exports = {
     const randomLine = randomLines[Math.floor(Math.random() * randomLines.length)];
     let index = randomHugGifs.indexOf(randomHugGif) +1 ;
     let indexline = randomLines.indexOf(randomLine) +1 ;
-    const embed = new EmbedBuilder().setImage(randomHugGif).setTitle(randomLine).setColor('LuminousVividPink').setFooter({ text: `Gif number: ${index} Line number: ${indexline}` });
+    const embed = new EmbedBuilder().setImage(randomHugGif)
+        .setTitle(randomLine)
+        .setColor('LuminousVividPink')
+        .setFooter({ text: `Gif number: ${index} Line number: ${indexline}` });
     await interaction.reply({ embeds: [embed] })
 },
 };

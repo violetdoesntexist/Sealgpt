@@ -78,7 +78,11 @@ module.exports = {
     let randomSpeciesName = randomSpeciesNames[indexSpecies]
     let randomSpeciesFact = randomSpeciesFacts[indexSpecies]
     let indexSpeciesPlusOne = indexSpecies + 1
-    const embed = new EmbedBuilder().setImage(randomSpeciesImage).setTitle(randomSpeciesName).setDescription(randomSpeciesFact).setColor('Blurple').setFooter({ text: `Species Nr. ${indexSpeciesPlusOne}` });
+    const embed = new EmbedBuilder()
+        .setImage(randomSpeciesImage)
+        .setTitle(randomSpeciesName)
+        .setDescription(randomSpeciesFact)
+        .setColor('Blurple').setFooter({ text: `Species Nr. ${indexSpeciesPlusOne}` });
     await interaction.reply({ embeds: [embed] })
 },
 };
