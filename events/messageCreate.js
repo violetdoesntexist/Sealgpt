@@ -26,7 +26,8 @@ const randomResponses = [
     "blap blap blap",
     //"honky christmas and a slappy new year! :3",
     //"hohohonk :3", for christmas!
-    "woof"
+    "woof",
+    "BOO"
 
 ];
 
