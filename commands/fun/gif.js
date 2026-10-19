@@ -14,7 +14,9 @@ const randomGifList = [
     "https://cdn.hackclub.com/01a14120-1dab-7912-8c5b-113693f150f9/IqJZSD7S.gif",
     "https://cdn.hackclub.com/01a14120-1c86-7573-b265-129431ed974e/vFnKD77Z4O0MfMVjf.gif",
     "https://cdn.hackclub.com/01a14120-1a46-759f-85ce-f51771c4b02d/CgacvMZJmDe7.gif",
-    "https://cdn.hackclub.com/01a14120-165b-7706-9ecc-ef419ab6f8c0/23MPHPXcGLwdrQdy.gif"
+    "https://cdn.hackclub.com/01a14120-165b-7706-9ecc-ef419ab6f8c0/23MPHPXcGLwdrQdy.gif",
+    "https://cdn.hackclub.com/01a1549a-e257-7134-9e38-ccff4ad9672d/HUwZSKbXEAE0c-b.gif",
+    "https://cdn.hackclub.com/01a1549a-c85a-7f8b-bf62-013cf6757797/ezgif-840d5e119c645228.gif"
 ];
 const randomMsg = randomGifList[Math.floor(Math.random() * randomGifList.length)];
 
@@ -23,7 +25,11 @@ module.exports = {
     async execute(interaction) {
     const randomSealGif = randomGifList[Math.floor(Math.random() * randomGifList.length)];
     index = randomGifList.indexOf(randomSealGif) + 1 ;
-    const embed = new EmbedBuilder().setImage(randomSealGif).setTitle("Heres your seal gif!:").setColor("Purple").setFooter({ text: `Gif number: ${index}` });
+    const embed = new EmbedBuilder()
+        .setImage(randomSealGif)
+        .setTitle("Heres your seal gif!:")
+        .setColor("Purple")
+        .setFooter({ text: `Gif number: ${index}` });
     await interaction.reply({ embeds: [embed] });
 },
 };
