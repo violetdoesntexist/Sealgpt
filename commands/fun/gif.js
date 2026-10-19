@@ -25,7 +25,6 @@ module.exports = {
     index = randomGifList.indexOf(randomSealGif) + 1 ;
     const embed = new EmbedBuilder().setImage(randomSealGif).setTitle("Heres your seal gif!:").setColor("Purple").setFooter({ text: `Gif number: ${index}` });
     await interaction.reply({ embeds: [embed] });
-    console.log("gif triggered")
 },
 };
 

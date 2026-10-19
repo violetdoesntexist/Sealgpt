@@ -77,8 +77,8 @@ module.exports = {
     let indexSpecies = randomSpeciesImages.indexOf(randomSpeciesImage);
     let randomSpeciesName = randomSpeciesNames[indexSpecies]
     let randomSpeciesFact = randomSpeciesFacts[indexSpecies]
-    const embed = new EmbedBuilder().setImage(randomSpeciesImage).setTitle(randomSpeciesName).setDescription(randomSpeciesFact).setColor('Blurple').setFooter({ text: `Species Nr. ${indexSpecies}` });
+    let indexSpeciesPlusOne = indexSpecies + 1
+    const embed = new EmbedBuilder().setImage(randomSpeciesImage).setTitle(randomSpeciesName).setDescription(randomSpeciesFact).setColor('Blurple').setFooter({ text: `Species Nr. ${indexSpeciesPlusOne}` });
     await interaction.reply({ embeds: [embed] })
-    console.log("species fact triggered")
 },
 };

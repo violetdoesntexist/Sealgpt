@@ -28,7 +28,6 @@ module.exports = {
     let indexline = randomResponses.indexOf(randomFishMsg) +1 ;
     embed = new EmbedBuilder().setImage(randomEatGif).setTitle(randomFishMsg).setColor("Aqua").setFooter({ text: `Gif number: ${index} Line number: ${indexline}` });
     await interaction.reply({ embeds: [embed] });
-    console.log("givefish triggered")
 },
 };
 
