@@ -1,4 +1,5 @@
-const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder, InteractionContextType, ApplicationIntegrationType } = require('discord.js');
+
 const randomHugGifs = [
     "https://cdn.hackclub.com/01a13679-00ff-7809-bc81-7db51dd33105/YXdnWsEz39PKxoB.gif",
     "https://cdn.hackclub.com/01a13678-fe37-7eca-b680-dbdfde49ab79/rLoYn9CT.gif",
@@ -26,7 +27,7 @@ const randomLines = [
 
 
 module.exports = {
-	data: new SlashCommandBuilder().setName('hug').setDescription('Seal Hug :3'),
+	data: new SlashCommandBuilder().setName('hug').setDescription('Seal Hug :3').setIntegrationTypes([ApplicationIntegrationType.GuildInstall,ApplicationIntegrationType.UserInstall]).setContexts([InteractionContextType.Guild, InteractionContextType.BotDM, InteractionContextType.PrivateChannel]),
     async execute(interaction) {
     const randomHugGif = randomHugGifs[Math.floor(Math.random() * randomHugGifs.length)];
     const randomLine = randomLines[Math.floor(Math.random() * randomLines.length)];
