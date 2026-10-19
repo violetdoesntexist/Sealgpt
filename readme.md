@@ -1,4 +1,4 @@
-![image](https://cdn.hackclub.com/01a15493-a4f6-7837-b1fc-895c4ec09451/SealGPT.png)
+![image](https://cdn.hackclub.com/01a15496-32d6-7c27-a239-b381660328fa/hry2d0jb.png)
 
 # SealGPT
 
