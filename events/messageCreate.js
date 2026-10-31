@@ -14,7 +14,6 @@ const randomResponses = [
     "want feesh...",
     "fishy pls",
     "hi im a seal btw",
-    "slappy halloween",
     "wawawawawa",
     "wawa",
     "WA!",
@@ -24,10 +23,9 @@ const randomResponses = [
     "FEEESH!!",
     "blap",
     "blap blap blap",
-    //"honky christmas and a slappy new year! :3",
-    //"hohohonk :3", for christmas!
-    "woof",
-    "BOO"
+    "honky christmas and a slappy new year! :3",
+    "hohohonk :3",
+    "woof"
 
 ];
 
