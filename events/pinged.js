@@ -10,7 +10,7 @@ const randomResponses = [
     "want feesh...",
     "fishy pls",
     "hi im a seal btw",
-    "slappy halloween",
+    "slappy new year! :3",
     "wawawawawa",
     "wawa",
     "WA!",
