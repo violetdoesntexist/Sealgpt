@@ -36,7 +36,7 @@ module.exports = {
     const embed = new EmbedBuilder().setImage(randomHugGif)
         .setTitle(randomLine)
         .setColor('LuminousVividPink')
-        .setFooter({ text: `Gif number: ${index} Line number: ${indexline}` });
+        .setFooter({ text: `Gif number: ${index}/${randomHugGifs.length} Line number: ${indexline}/${randomLines.length}` });
     await interaction.reply({ embeds: [embed] })
 },
 };

@@ -30,7 +30,7 @@ module.exports = {
         .setImage(randomEatGif)
         .setTitle(randomFishMsg)
         .setColor("Aqua")
-        .setFooter({ text: `Gif number: ${index} Line number: ${indexline}` });
+        .setFooter({ text: `Gif number: ${index}/${randomEatGifs.length} Line number: ${indexline}/${randomResponses.length}` });
     await interaction.reply({ embeds: [embed] });
 },
 };

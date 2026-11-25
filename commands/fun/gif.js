@@ -29,7 +29,7 @@ module.exports = {
         .setImage(randomSealGif)
         .setTitle("Heres your seal gif!:")
         .setColor("Purple")
-        .setFooter({ text: `Gif number: ${index}` });
+        .setFooter({ text: `Gif number: ${index}/${randomGifList.length}` });
     await interaction.reply({ embeds: [embed] });
 },
 };

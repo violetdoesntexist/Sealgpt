@@ -82,7 +82,7 @@ module.exports = {
         .setImage(randomSpeciesImage)
         .setTitle(randomSpeciesName)
         .setDescription(randomSpeciesFact)
-        .setColor('Blurple').setFooter({ text: `Species Nr. ${indexSpeciesPlusOne}` });
+        .setColor('Blurple').setFooter({ text: `Species Nr. ${indexSpeciesPlusOne}/${randomSpeciesImages.length}` });
     await interaction.reply({ embeds: [embed] })
 },
 };
